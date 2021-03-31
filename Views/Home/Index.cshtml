@@ -1,0 +1,368 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+}
+<!-- Page Container -->
+<div class="w3-container w3-content" style="max-width:1400px;margin-top:80px;margin-bottom:50px;">
+    <!-- The Grid -->
+    <div class="w3-row">
+        <!-- Left Column -->
+        <div class="w3-col m3">
+            <!-- Profile -->
+            <div class="w3-card w3-round w3-white">
+                <div class="w3-container">
+                    <h4 class="w3-center">My Profile</h4>
+                    <p class="w3-center"><img src="~/Content/UserImages/avatar3.png" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
+                    <hr>
+                    <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> Designer, UI</p>
+                    <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> Miami, Fl. USA</p>
+                    <p><i class="fa fa-birthday-cake fa-fw w3-margin-right w3-text-theme"></i> April 1, 1988</p>
+                </div>
+            </div>
+            <br>
+
+            <!-- Accordion -->
+            <div class="w3-card w3-round">
+                <div class="w3-white">
+                    <button onclick="myFunction('groups')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-circle-o-notch fa-fw w3-margin-right"></i> My Groups</button>
+                    <div id="groups" class="w3-hide w3-container">
+                        <p>Some text..</p>
+                    </div>
+                    <button onclick="myFunction('events')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-calendar-check-o fa-fw w3-margin-right"></i> My Events</button>
+                    <div id="events" class="w3-hide w3-container">
+                        <p>Something interesting said here.</p>
+                    </div>
+                    <button onclick="myFunction('myPics')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-users fa-fw w3-margin-right"></i> My Photos</button>
+                    <div id="myPics" class="w3-hide w3-container">
+                        <div class="w3-row-padding">
+                            <br>
+                            <div class="w3-half">
+                                <img src="~/Content/Images/lights.jpg" style="width:100%" class="w3-margin-bottom">
+                            </div>
+                            <div class="w3-half">
+                                <img src="~/Content/Images/nature.jpg" style="width:100%" class="w3-margin-bottom">
+                            </div>
+                            <div class="w3-half">
+                                <img src="~/Content/Images/mountains.jpg" style="width:100%" class="w3-margin-bottom">
+                            </div>
+                            <div class="w3-half">
+                                <img src="~/Content/Images/forest.jpg" style="width:100%" class="w3-margin-bottom">
+                            </div>
+                            <div class="w3-half">
+                                <img src="~/Content/Images/nature.jpg" style="width:100%" class="w3-margin-bottom">
+                            </div>
+                            <div class="w3-half">
+                                <img src="~/Content/Images/snow.jpg" style="width:100%" class="w3-margin-bottom">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+
+            <!-- Interests -->
+            <div class="w3-card w3-round w3-white w3-hide-small">
+                <div class="w3-container">
+                    <p>Interests/Tags</p>
+                    <p>
+                        <span class="w3-tag w3-small w3-theme-d5">News</span>
+                        <span class="w3-tag w3-small w3-theme-d4">Music</span>
+                        <span class="w3-tag w3-small w3-theme-d3">Labels</span>
+                        <span class="w3-tag w3-small w3-theme-d2">Games</span>
+                        <span class="w3-tag w3-small w3-theme-d1">Friends</span>
+                        <span class="w3-tag w3-small w3-theme">Movies</span>
+                        <span class="w3-tag w3-small w3-theme-l1">Drinks</span>
+                        <span class="w3-tag w3-small w3-theme-l2">Food</span>
+                        <span class="w3-tag w3-small w3-theme-l3">Design</span>
+                        <span class="w3-tag w3-small w3-theme-l4">Art</span>
+                        <span class="w3-tag w3-small w3-theme-l5">Photos</span>
+                    </p>
+                </div>
+            </div>
+            <br>
+
+            <!-- Alert Box -->
+            <div class="w3-container w3-display-container w3-round w3-theme-l4 w3-border w3-theme-border w3-margin-bottom w3-hide-small">
+                <span onclick="this.parentElement.style.display='none'" class="w3-button w3-theme-l3 w3-display-topright">
+                    <i class="fa fa-remove"></i>
+                </span>
+                <p><strong>Hey!</strong></p>
+                <p>People are looking at your profile. Find out who.</p>
+            </div>
+
+            <!-- End Left Column -->
+        </div>
+
+        <!-- Middle Column -->
+        <div class="w3-col m7">
+
+            <div class="w3-row-padding">
+                <div class="w3-col m12">
+                    <div class="w3-card w3-round w3-white">
+                        <div class="w3-container w3-padding">
+                            <h6 class="w3-opacity">Trump.IT - Say it LOUD!</h6>
+                            <p contenteditable="true" class="w3-border w3-padding">Status: Feeling Great Today...
+                            <button onclick="myFunction('React')" class="w3-button w3-theme" style="margin-left:400px;"><i class="fa fa-pencil"></i>  React!</button></p>
+                                <div id="React" class="w3-hide w3-container">
+                                    <form class="w3-container" action="">
+                                        <p>
+                                            <button class="w3-btn w3-blue" style="float:right;">React!</button><input class="w3-input w3-border" style="width:85%;" name="reaction" type="text">
+                                        </p>
+                                    </form>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-container w3-card w3-white w3-round w3-margin">
+                <br>
+                <img src="~/Content/UserImages/avatar2.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+                <span class="w3-right w3-opacity">1 min</span>
+                <h4>John Doe</h4><br>
+                <hr class="w3-clear">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div class="w3-row-padding" style="margin:0 -16px">
+                    <div class="w3-half">
+                        <img src="~/Content/Images/lights.jpg" style="width:100%" alt="Northern Lights" class="w3-margin-bottom">
+                    </div>
+                    <div class="w3-half">
+                        <img src="~/Content/Images/nature.jpg" style="width:100%" alt="Nature" class="w3-margin-bottom">
+                    </div>
+                </div>
+                <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button>
+                <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button>
+            </div>
+
+            <div class="w3-container w3-card w3-white w3-round w3-margin">
+                <br>
+                <img src="~/Content/UserImages/avatar5.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+                <span class="w3-right w3-opacity">16 min</span>
+                <h4>Jane Doe</h4><br>
+                <hr class="w3-clear">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button>
+                <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button>
+            </div>
+
+            <div class="w3-container w3-card w3-white w3-round w3-margin">
+                <br>
+                <img src="~/Content/UserImages/avatar6.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+                <span class="w3-right w3-opacity">32 min</span>
+                <h4>Angie Jane</h4><br>
+                <hr class="w3-clear">
+                <p>Have you seen this?</p>
+                <img src="~/Content/Images/nature.jpg" style="width:100%" class="w3-margin-bottom">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button>
+                <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button>
+            </div>
+
+            <!-- End Middle Column -->
+        </div>
+
+        <!-- Right Column -->
+        <div class="w3-col m2">
+
+            <div class="w3-card w3-round w3-white w3-center">
+                <div class="w3-container">
+                    <p class="f_request">Friend Request</p>
+                    <img src="~/Content/UserImages/avatar6.png" alt="Avatar" style="width:50%"><br>
+                    <span>Jane Doe</span>
+                    <div class="w3-row w3-opacity">
+                        <div class="w3-half">
+                            <button class="w3-button w3-block w3-green w3-section" title="Accept"><i class="fa fa-check"></i></button>
+                        </div>
+                        <div class="w3-half">
+                            <button class="w3-button w3-block w3-red w3-section" title="Decline"><i class="fa fa-remove"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="w3-card w3-round w3-white w3-center">
+                <div class="w3-container">
+                    <p class="u_events">Upcoming Events:</p>
+                    <img src="~/Content/Images/forest.jpg" alt="Forest" style="width:100%;">
+                    <p><strong>Holiday</strong></p>
+                    <p>Friday 15:00</p>
+                    <p><button onclick="document.getElementById('events_cal').style.display='block'" class="w3-button w3-block w3-theme-l4">Info</button></p>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="w3-card w3-round w3-white w3-padding-16 w3-center">
+                <p class="sponsors">Support Our Sponsors</p>
+                <div class="w3-card">
+                    <div class="w3-container w3-red">
+                        <h1><b>HOO</b></h1>
+                    </div>
+                    <div class="w3-container w3-xlarge">
+                        <p>
+                            The Newest<br>
+                            <i><b>triple-action</b></i><br>
+                            <span class="w3-xxlarge w3-text-red"><b>HOO</b></span>
+                        </p>
+                        <p>
+                            <del>$400</del> <span class="w3-tag w3-yellow">New!</span><br>
+                            Now only $299 !!!
+                        </p>
+                    </div>
+                    <div class="w3-container w3-red">
+                        <p class="w3-opacity">Contact: 555 555 555</p>
+                    </div>
+                </div>
+                <br>
+                <div class="w3-card w3-animate-fading">
+                    <div class="w3-container w3-blue">
+                        <h1><b>HOO</b></h1>
+                    </div>
+                    <div class="w3-container w3-xlarge">
+                        <p>
+                            The Newest<br>
+                            <i><b>triple-action</b></i><br>
+                            <span class="w3-xxlarge w3-text-red"><b>HOO</b></span>
+                        </p>
+                        <p>
+                            <del>$400</del><br>
+                            Now only $299 !!!
+                        </p>
+                    </div>
+                    <div class="w3-container w3-blue">
+                        <p class="w3-opacity">Contact: 555 555 555</p>
+                    </div>
+                </div>
+                <br>
+                <div class="w3-card">
+                    <div class="w3-container">
+                        <h1><b>HOO</b></h1>
+                    </div>
+                    <div class="w3-container w3-xlarge w3-red">
+                        <p>
+                            The Newest<br>
+                            <i><b>triple-action</b></i><br>
+                            <span class="w3-xxlarge"><b>HOO</b></span>
+                        </p>
+                        <p>
+                            Before <del>$400</del><br>
+                            Now only $299 !!!
+                        </p>
+                    </div>
+                    <div class="w3-container">
+                        <p class="w3-opacity">Contact: 555 555 555</p>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="w3-card w3-round w3-white w3-padding-32 w3-center">
+                    <p><i class="fa fa-bug w3-xxlarge"></i></p>
+                </div>
+
+                <!-- End Right Column -->
+            </div>
+
+            <!-- End Grid -->
+        </div>
+
+        <!-- End Page Container -->
+    </div>
+    <br>
+    <div id="myPost" class="w3-modal">
+        <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+            <header class="w3-container w3-teal">
+                <span onclick="document.getElementById('myPost').style.display='none'" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Cancel">&times;</span>
+                <h2>Say It Loud!</h2>
+            </header>
+            <form class="w3-container">
+                <div class="w3-section">
+                    <input type="text" class="w3-input w3-border w3-margin-bottom w3-animate-input" required />
+                    <textarea class="w3-input w3-border w3-margin-bottom  w3-animate-input" rows="10" cols="50"></textarea>
+                    <select class="w3-select" name="option">
+                        <option value="choose">Make This Post:</option>
+                        <option value="pub" style="color:green;">Public</option>
+                        <option value="priv" style="color:red;">Private</option>
+                    </select>
+                </div>
+                <button class="w3-button w3-block w3-green w3-section w3-padding" type="submit">Post It!</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="events_cal" class="w3-modal">
+        <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+            <header class="w3-container w3-blue">
+                <span onclick="document.getElementById('events_cal').style.display='none'" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Cancel">&times;</span>
+                <h2>Upcoming Events - Sign Up Now</h2>
+            </header>
+
+            <div class="w3-bar w3-border-bottom">
+                <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'Calendar')">Calendar</button>
+                <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'Add')">Add An Event</button>
+                <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'Event')">Event Information</button>
+            </div>
+
+            <div id="Calendar" class="w3-container event">
+                <h1>Calendar</h1>
+
+            </div>
+
+            <div id="Add" class="w3-container event">
+                <h1>Add An Event</h1>
+                <form class="w3-container">
+                    <div class="w3-row w3-container">
+                        <div class="w3-col s6 w3-center">
+                            <input type="text" class="w3-input w3-border w3-margin-bottom w3-animate-input" placeholder="Event Title" />
+                        </div>
+                        <div class="w3-col s6 w3-center">
+                            <label for="event_name">Event Date:</label>
+                            <input type="date" id="event_date" name="event_name" class="w3-border w3-margin-bottom"> <a href="#" style="font-size:10px;padding-left:10px;">add event details</a>
+                        </div>
+                    </div>
+                    <button class="w3-button w3-block w3-green w3-section w3-padding" type="submit">Post It!</button>
+                </form>
+            </div>
+
+            <div id="Event" class="w3-container event">
+                <h1>Event Information</h1>
+                <p>
+
+                </p>
+            </div>
+
+            <footer class="w3-container w3-teal">
+                <p>Events & Live Streams</p>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        document.getElementsByClassName("tablink")[0].click();
+        function openCity(evt, cityName) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("event");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].classList.remove("w3-light-grey");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.classList.add("w3-light-grey");
+        }
+    </script>
+
+    <script>
+        function myFunction(id) {
+            var x = document.getElementById(id);
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
